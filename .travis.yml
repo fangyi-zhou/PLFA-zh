@@ -46,10 +46,6 @@ before_deploy: |
     sed -i 's/^baseurl\:\s*".*"$/baseurl: ""/g ; s/^url\:\s*".*"$/url: "https:\/\/plfa-zh.github.io"/g' _config.yml;
   fi
 
-branches:
-  only:
-  - dev
-
 git:
   depth: 1
 
