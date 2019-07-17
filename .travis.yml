@@ -34,7 +34,7 @@ before_install:
 script:
 - agda --version
 - acknowledgements --version
-- curl -L https://raw.githubusercontent.com/MestreLion/git-tools/master/git-restore-mtime-core | python
+- curl -L https://raw.githubusercontent.com/MestreLion/git-tools/master/git-restore-mtime | python
 - ls -la out/plfa
 - ls -la src/plfa
 - make -nd test-offline # disable to only build cache
