@@ -34,9 +34,9 @@ before_install:
 script:
 - agda --version
 - acknowledgements --version
-- make test-offline # disable to only build cache
 - ls -la out/plfa
 - ls -la src/plfa
+- make -nd test-offline # disable to only build cache
 
 before_deploy: |
   if ! [[ $BEFORE_DEPLOY_RUN ]]; then
